@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity() {
                     LaunchedEffect(key1 = true) {
                         productsViewModel.trowError.collect {
 
-                            Toast.makeText(this@MainActivity, "it", Toast.LENGTH_SHORT)
+                            Toast.makeText(this@MainActivity, it, Toast.LENGTH_SHORT)
                                 .show()
 
                         }
